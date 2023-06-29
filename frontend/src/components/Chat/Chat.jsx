@@ -35,11 +35,10 @@ const Chat = () => {
     }
   };
 
-  console.log(response);
-
   return (
-    <div className="container p-6">
-      <h1 className="title is-1">Custom AI Chat</h1>
+    <div className="app-container">
+      <div className="container">
+      <h1 className="title is-1 has-text-centered">Custom AI Chat</h1>
       <form onSubmit={handleForm}>
         <div className="field has-addons pb-3">
           <div className="control is-expanded">
@@ -71,6 +70,19 @@ const Chat = () => {
           </pre>
         )
       )}
+      </div>
+      <div className="stars">
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+      </div>
     </div>
   );
 };
